@@ -7,23 +7,74 @@
   src: url(/font/Montserrat-Bold.ttf);
 }
 body {
+  background-color: #ffffff;
   font-family: "font";
   margin: 0;
   padding: 0;
+  color: #0e0e0e;
   height: 100%;
   box-sizing: border-box;
   width: 100%;
 }
-
-b {
+body b {
   font-family: "font_bold";
   font-weight: normal;
 }
 
 .wrapper {
   height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
   display: grid;
   grid-template-rows: 1fr auto;
+}
+
+header {
+  align-items: center;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+header .header_logo {
+  margin-right: 170px;
+}
+header ul {
+  display: flex;
+  margin: 0;
+  gap: 45px;
+  padding: 0;
+  list-style-type: none;
+}
+header ul li a {
+  font-style: normal;
+  transition: all 0.3s ease-in;
+  font-weight: 500;
+  font-size: 15px;
+  color: #0e0e0e;
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: #7E99EC;
+}
+header button {
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  width: 192px;
+  height: 48px;
+  padding: 15px 25px;
+  border: 2px solid #7e99ec;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #7e99ec;
+}
+header button:hover {
+  background: #7E99EC;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
