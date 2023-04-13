@@ -1,0 +1,25 @@
+@font-face {
+  font-family: font;
+  src: url(/font/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: font_bold;
+  src: url(/font/Montserrat-Bold.ttf);
+}
+body {
+  font-family: "font";
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+b {
+  font-family: "font_bold";
+  font-weight: normal;
+}
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
