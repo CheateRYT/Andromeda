@@ -7,6 +7,7 @@
   src: url(/font/Montserrat-Bold.ttf);
 }
 body {
+  overflow-x: hidden;
   background-color: #ffffff;
   font-family: "font";
   margin: 0;
@@ -355,11 +356,34 @@ header button:hover {
 }
 
 .section5 {
+  position: relative;
   margin-bottom: 120px;
   width: 1200px;
   background: #0E0E0E;
   height: 819px;
   border-radius: 30px;
+}
+.section5::before {
+  width: 413px;
+  height: 413px;
+  content: "";
+  position: absolute;
+  background-image: url(/img/Ellipse\ 37.png);
+  background-repeat: no-repeat;
+  left: -321px;
+  z-index: -200;
+  top: -101px;
+}
+.section5::after {
+  width: 413px;
+  height: 413px;
+  content: "";
+  position: absolute;
+  background-image: url(/img/Ellipse\ 37.png);
+  background-repeat: no-repeat;
+  left: 1150px;
+  z-index: -200;
+  top: 450px;
 }
 
 .callback_text {
@@ -610,16 +634,22 @@ option {
 }
 
 .vk {
+  width: 30px;
+  height: 30px;
   margin-right: 20px;
   cursor: pointer;
 }
 
 .inst {
+  width: 30px;
+  height: 30px;
   margin-right: 20px;
   cursor: pointer;
 }
 
 .tg {
+  width: 30px;
+  height: 30px;
   margin-right: 20px;
   cursor: pointer;
 }
@@ -629,6 +659,82 @@ option {
   height: 300.81px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+footer {
+  position: relative;
+  height: 247px;
+  background: #0E0E0E;
+}
+
+.footer_copyrght {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: rgba(241, 244, 255, 0.3);
+}
+
+.top_block {
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  width: 169px;
+  height: 40px;
+}
+
+.middle_block {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.mess {
+  display: flex;
+}
+
+.footer_copyrght {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer_ul {
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  justify-content: space-between;
+  display: flex;
+}
+.footer_ul a {
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  padding-right: 60px;
+}
+
+.black_back {
+  position: absolute;
+  background-color: #0E0E0E;
+  width: 30000px;
+  top: 0px;
+  left: -500px;
+  height: 247px;
+  z-index: -200;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,7 @@
   src: url(/font/Montserrat-Bold.ttf);
 }
 body {
+  overflow-x: hidden;
   background-color: #ffffff;
   font-family: "font";
   margin: 0;
@@ -354,6 +355,29 @@ left: -123px;
 ////////////////////////SECTION 5/////////////////////
 
 .section5 {
+  position: relative;
+  &::before{
+    width: 413px;
+    height: 413px;
+    content: "";
+    position: absolute;
+    background-image: url(/img/Ellipse\ 37.png);
+    background-repeat: no-repeat;
+    left: -321px;
+    z-index: -200;
+    top: -101px;
+  }
+  &::after{
+    width: 413px;
+    height: 413px;
+    content: "";
+    position: absolute;
+    background-image: url(/img/Ellipse\ 37.png);
+    background-repeat: no-repeat;
+    left: 1150px;
+    z-index: -200;
+    top: 450px;
+  }
   margin-bottom: 120px;
   width: 1200px;
   background: #0E0E0E;
@@ -602,14 +626,20 @@ margin-bottom: 129px;
   display: flex;
 }
 .vk {
+  width: 30px;
+  height: 30px;
   margin-right: 20px;
   cursor: pointer;
 }
 .inst {
+  width: 30px;
+  height: 30px;
   margin-right: 20px;
   cursor: pointer;
 }
 .tg {
+  width: 30px;
+  height: 30px;
   margin-right: 20px;
   cursor: pointer;
 }
@@ -621,4 +651,72 @@ background-position: center;
 }
 
 
-
+////////////////////FOOTE////////////////////
+footer{
+  
+  position: relative;
+  height: 247px;
+  background: #0E0E0E;
+}
+.footer_copyrght{
+  font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 150%;
+letter-spacing: 0.01em;
+color: rgba(241, 244, 255, 0.3);
+}
+.top_block{
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_logo{
+  width: 169px;
+height: 40px;
+}
+.middle_block{
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 50px;
+}
+.mess{
+  display: flex;
+}
+.footer_copyrght{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.footer_ul{
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  a{
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+font-weight: 500;
+font-size: 15px;
+line-height: 150%;
+text-align: center;
+letter-spacing: 0.01em;
+color: #FFFFFF;
+    padding-right: 60px;
+  }
+  justify-content: space-between;
+  display: flex;
+}
+.black_back{
+  position: absolute;
+  background-color: #0E0E0E;
+  width: 30000px;
+  top: 0px;
+  left: -500px;
+  height: 247px;
+  z-index: -200;
+}
