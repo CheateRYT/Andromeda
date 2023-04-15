@@ -522,6 +522,7 @@ option {
 .send_action {
   cursor: pointer;
   text-align: center;
+  transition: all 0.3s ease-in;
   margin: 0 auto;
   margin-bottom: 20px;
   font-weight: 600;
@@ -534,6 +535,10 @@ option {
   height: 60px;
   background: #7E99EC;
   border-radius: 30px;
+}
+.send_action:hover {
+  background-color: #ffffff;
+  color: #7e99ec;
 }
 
 .personal {

@@ -516,8 +516,13 @@ color: #0E0E0E;
 .send_action {
   cursor: pointer;
   text-align: center;
+  transition: all 0.3s ease-in;
   margin: 0 auto;
   margin-bottom: 20px;
+  &:hover {
+    background-color: #ffffff;
+    color: #7e99ec;
+  }
   font-weight: 600;
 font-size: 20px;
 line-height: 60px;
